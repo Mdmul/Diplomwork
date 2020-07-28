@@ -1,0 +1,59 @@
+
+/* expertise */
+
+.expertise {
+
+}
+
+.expertise__body {
+}
+.expertise__head {
+  margin: 0 auto;
+  border: 1px solid red;
+
+}
+.expertise__title {
+  border: 1px solid red;
+  margin: 0 auto;
+  text-align: center;
+}
+.expertise__text {
+   text-align: center;
+}
+.expertise__line {
+ margin: 0 auto;
+  text-align: center;
+  width: 53px;
+height: 5px;
+background-color: #413d4b;
+opacity: 0.3;
+}
+.expertise__row {
+}
+.expertise__column {
+  display: flex;
+  width: 894px;
+  height: 435px;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+.item-expertise {
+  border: 1px solid red;
+  width: 254px;
+  height: 178px;
+  text-align: center;
+}
+.item-expertise__icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.item-expertise__title {
+  display: inline-block;
+  border: 1px solid green;
+ 
+}
+.item-expertise__text {
+}

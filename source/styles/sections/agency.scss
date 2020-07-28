@@ -1,0 +1,99 @@
+
+.agency {
+  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+}
+
+.agency__body {
+}
+.agency__header {
+  display: flex;
+  justify-content: space-between;
+}
+.agency__logo {
+  display: flex;
+}
+.agency__icon {
+
+}
+.agency__title {
+
+}
+.agency__menu {
+  
+}
+.agency__list {
+  display: flex;
+  justify-content: space-between;
+}
+.menu__link {
+  margin-right: 20px;
+  color: #ffffff;
+  font-family: "Roboto - Black";
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.agency__main {
+  margin: 183px auto 0px;
+}
+.main__title {
+  color: #ffffff;
+  font-family: "Playfair Display - Black";
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.32px;
+  text-align: center;
+  align-items: center;
+   margin: 0px auto 21px;
+}
+
+.agency__line{
+  border: 1px solid  #00e0d0;
+  width: 50px;
+  margin: 0px auto 30px;
+}
+
+.main__text {
+  max-width: 771px;
+  margin: 0px auto 50px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  text-align: center;
+}
+.agency__button {
+  width: 120px;
+  height: 40px;
+  margin: 0px auto 125px;
+  border: 1px solid beige;
+  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+}
+.agency__message {
+  margin: 10px auto;
+  text-align: center;
+  color: #00e0d0;
+font-family: "Hammersmith One";
+font-size: 16px;
+font-weight: 400;
+text-transform: uppercase;
+  
+}
+.agency__options {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+  
+}
+.agency__item {
+  border: 1px solid gray;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.agency__item:first-child{
+  background-color: #00e0d0
+}
