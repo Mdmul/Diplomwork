@@ -1,0 +1,130 @@
+@import '../shared/index';
+
+.contact {
+}
+
+.contact__body {
+display: flex;
+justify-content: space-between;
+}
+
+@media screen and (max-width:769px){
+    .contact__body{
+        flex-wrap: wrap;
+    }
+ }
+ 
+.contact__header-left {
+
+}
+
+.header-left__text {
+color: #413d4b;
+font-family: "Playfair Display";
+font-size: 22px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1.1px;
+}
+
+.header-left__name {
+display: block;
+min-width: 450px;
+min-height: 45px;
+margin-top: 30px;
+text-align: left;
+padding-left: 20px; 
+opacity: 0.5;
+color: #413d4b;
+font-family: $textRoboto;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0.7px;
+}
+
+.header-left__email {
+display: block;
+min-width: 450px;
+min-height: 45px;
+margin: 20px 0px;
+padding-left: 20px; 
+opacity: 0.5;
+color: #413d4b;
+font-family: $textRoboto;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0.7px;
+}
+.header-left__subject {
+display: block;
+min-width: 450px;
+min-height: 45px;
+margin-bottom: 20px;
+padding-left: 20px; 
+opacity: 0.5;
+color: #413d4b;
+font-family: $textRoboto;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0.7px;
+}
+.header-left__message {
+display: block;
+min-width: 450px;
+min-height: 200px;
+margin-bottom: 20px;
+padding: 15px 0px 0px 20px; 
+opacity: 0.5;
+color: #413d4b;
+font-family: $textRoboto;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0.7px;
+resize: none;
+}
+.contact__button {
+display: inline-block;
+}
+
+.contact__button-message {
+border: $borderbtn;
+background-color: #ffffff;
+color: $textbtn-color;
+font-family: "Hammersmith One";
+font-size: 16px;
+font-weight: 400;
+text-transform: uppercase;
+padding: 12px 28px;
+
+}
+
+.contact__header-right {
+}
+.header-right__text {
+color: #413d4b;
+font-family: "Playfair Display";
+font-size: 22px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1.1px;
+display: inline-block;
+margin-bottom: 40px;
+}
+.image {
+display: flex;
+justify-content: space-around;
+min-height: 410px;
+}
+
+
+.image__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 80px;
+}
+.image__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }

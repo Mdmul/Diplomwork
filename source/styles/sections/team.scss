@@ -1,0 +1,117 @@
+@import '../shared/index';
+
+.team {
+background-image: url(../../img/backgroundTeam.png);
+background-repeat: no-repeat;
+background-size: cover;
+opacity: 0.85;
+}
+
+.team__body {
+}
+.team__header {
+    
+}
+.team__title {
+text-align: center;
+color: #ffffff;
+font-family: "Playfair Display";
+font-size: 22px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1.1px;
+}
+
+.team__text {
+margin-top: 20px;
+text-align: center;
+color: #f9f9f9;
+font-family: "Playfair Display";
+font-size: 14px;
+font-weight: 400;
+letter-spacing: 1.05px;
+}
+.team__line {
+margin: 20px auto 45px;
+width: 50px;
+height: 2px;
+background-color: #ffffff;
+opacity: 0.2;
+}
+.team__row {
+}
+.team__column {
+ display: flex;
+ justify-content: space-between;
+}
+
+@media screen and (max-width:769px){
+    .team__column{
+        flex-wrap: wrap;
+    }
+ }
+ @media screen and (max-width:420px){
+    .team__column{
+        flex-direction: column;
+    }
+ }
+
+.item-team {
+margin-bottom: 70px;
+border: 1px solid #ffffff;
+   
+}
+.item-team__foto {
+width: 220px;
+height: 229px;
+margin-bottom: 20px;
+background: white;
+}
+.item-team__name {
+    text-align: center;
+    color: #ffffff;
+font-family: "Roboto - Black";
+font-size: 14px;
+font-weight: 400;
+text-transform: uppercase;
+letter-spacing: 0.7px;
+margin-bottom: 10px;
+}
+.item-team__position {
+text-align: center;
+opacity: 0.7;
+color: #fafafa;
+font-family: $textRoboto;
+font-size: 13px;
+font-weight: 300;
+text-transform: uppercase;
+margin-bottom: 25px;
+}
+.team__end {
+    text-align: center;
+}
+.end-text {
+text-align: center;
+color: #f3f3f3;
+font-family: $textRoboto;
+font-size: 14px;
+font-weight: 300;
+letter-spacing: 0.7px;
+margin-bottom: 30px;
+}
+.end-btn {
+display:inline-flex;
+border: $borderbtn;
+margin-bottom: 20px;
+}
+
+.end-btn__message {
+padding: 15px;
+color: $textbtn-color;
+font-family: "Hammersmith One";
+font-size: 16px;
+font-weight: 400;
+text-transform: uppercase;
+background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+border: none;
+}

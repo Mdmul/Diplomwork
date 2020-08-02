@@ -2,30 +2,36 @@
 /* video */
 
 .video {
-    width: 1602px;
-    height: 553px;
-    background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
-    opacity: 0.85;
+  background-image: url(../../img/backgroundVideo.png), url(../../img/backgraundVideo1.png);
+  height: 553px;
+  opacity: 0.85;
+  background-repeat: no-repeat;
+  background-size: cover;
+    
   }
   
   .video__body {
   }
   .video__outline {
-    margin: 202px auto 0px;
-    border: 1px solid red;
-    width: 103px;
+  margin: 202px auto 0px;
+  border: 1px solid red;
+  width: 103px;
   height: 103px;
   border: 3px solid #ffffff;
   border-radius: 50%;
   }
   .video__image {
-    width: 37px;
-  
-  
+  width: 37px;  
   margin: 29px 29px 29px 37px;
   }
+
   .video__text {
     text-align: center;
-   
-    margin: 15px auto 203px;
+    color: #ffffff;
+    font-family: "Roboto - Black";
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin: 25px auto 203px;
   }

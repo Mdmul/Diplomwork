@@ -1,38 +1,52 @@
+@import '../shared/index.scss';
 
 .agency {
-  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+  background-image: url(../../img/backgroundAgency.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .agency__body {
+  text-align: center;
 }
 .agency__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.agency__logo {
+.logo {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.agency__icon {
+.logo__icon {
+margin-right: 10px;
+}
+.logo__title {
+}
 
-}
-.agency__title {
-
-}
 .agency__menu {
   
 }
 .agency__list {
-  display: flex;
-  justify-content: space-between;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
+
 .menu__link {
   margin-right: 20px;
   color: #ffffff;
-  font-family: "Roboto - Black";
+  font-family: $textRoboto;
   font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
 }
+
+.menu__link--active {
+  color: #00e0d0;
+}
+
 .agency__main {
   margin: 183px auto 0px;
 }
@@ -43,8 +57,18 @@
   font-weight: 400;
   letter-spacing: 0.32px;
   text-align: center;
-  align-items: center;
-   margin: 0px auto 21px;
+  margin: 0px auto 21px;
+  opacity: 0;
+  transform: translateY(-45px);
+  animation: show-from-top 1000ms ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes show-from-top{
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .agency__line{
@@ -57,43 +81,52 @@
   max-width: 771px;
   margin: 0px auto 50px;
   color: #ffffff;
-  font-family: Roboto;
+  font-family: $textRoboto;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.7px;
   text-align: center;
+  opacity: 0;
+  transform: translateY(45px);
+  animation: show-from-top 1000ms ease;
+  animation-fill-mode: forwards;
+  animation-delay: 300ms;
 }
 .agency__button {
-  width: 120px;
-  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px;
   margin: 0px auto 125px;
-  border: 1px solid beige;
-  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
-}
+  border: $borderbtn;
+  }
+
 .agency__message {
-  margin: 10px auto;
   text-align: center;
-  color: #00e0d0;
-font-family: "Hammersmith One";
-font-size: 16px;
-font-weight: 400;
-text-transform: uppercase;
-  
+  color: $textbtn-color;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+  border: none;
 }
 .agency__options {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 70px;
-  
-}
+  }
+
 .agency__item {
-  border: 1px solid gray;
+  border: 1px solid #c2c2c2;
   width: 10px;
   height: 10px;
   border-radius: 50%;
   margin-right: 5px;
-}
+  }
+  
 .agency__item:first-child{
-  background-color: #00e0d0
+  background-color: #00e0d0;
+  border: none;
 }

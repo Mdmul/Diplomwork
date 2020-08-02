@@ -1,4 +1,4 @@
-
+@import '../shared/index';
 
 /* история */
 .story {
@@ -8,8 +8,21 @@
   .story__body {
   display: flex;
   margin-left: 64px;
- 
+   }
+
+   @media screen and (max-width:1229px){
+    .story__body{
+      flex-direction: column;
+    } 
+    .story__head{
+      order: 2;
+    }
+    .story__image{
+      order: 1;
+      margin-bottom: 20px;
+    }
   }
+
   .story__image {
     width: 235px;
   height: 229px;
@@ -24,18 +37,52 @@
   .story__head {
   }
   .story__title {
-    color: #413d4b;
+color: #413d4b;
 font-family: "Playfair Display";
 font-size: 22px;
 font-weight: 700;
 text-transform: uppercase;
+color: #413d4b;
+letter-spacing: 1.1px;
+margin-bottom: 30px;
   }
+
   .story__text1 {
+opacity: 0.75;
+color: #413d4b;
+font-family: $textRoboto;
+font-size: 14px;
+font-weight: 300;
+line-height: 22px;
+letter-spacing: 0.42px;
+margin-bottom: 30px;
   }
   .story__text2 {
+opacity: 0.75;
+color: #413d4b;
+font-family: $textRoboto;
+font-size: 14px;
+font-weight: 300;
+line-height: 22px;
+letter-spacing: 0.42px;
+margin-bottom: 30px;
   }
+
   .story__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    margin: 0px auto;
+    border: $borderbtn;
   }
   .story__message {
+color: $textbtn-color;
+font-family: "Hammersmith One";
+font-size: 16px;
+font-weight: 400;
+text-transform: uppercase;
+border: none;
+background-color: #ffffff;
   }
   
