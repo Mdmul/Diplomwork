@@ -45,9 +45,9 @@ margin-top: 25px;
 
 .item-footer__title {
 color: #ffffff;
-font-family: "Roboto - Black";
+font-family: $textRoboto;
 font-size: 15px;
-font-weight: 400;
+font-weight: 800;
 line-height: 26px;
 text-transform: uppercase;
 letter-spacing: 0.75px;
@@ -85,9 +85,9 @@ font-size: 18px;
 
 .item-footer__text {
 color: #ffffff;
-font-family: "Roboto - Black";
+font-family: $textRoboto;
 font-size: 15px;
-font-weight: 400;
+font-weight: 800;
 line-height: 26px;
 text-transform: uppercase;
 letter-spacing: 0.75px;

@@ -30,9 +30,9 @@ margin-bottom: 45px;
 
 .testimonials__name {
 color: #ffffff;
-font-family: "Roboto - Black";
+font-family: $textRoboto;
 font-size: 14px;
-font-weight: 400;
+font-weight: 800;
 line-height: 22px;
 text-transform: uppercase;
 letter-spacing: 0.7px;
@@ -48,6 +48,22 @@ font-weight: 300;
 line-height: 22px;
 text-transform: uppercase;
 margin-bottom: 30px;
+}
+
+.item-testimonials__button-left{
+margin-right: 15px;
+background-image: url(../../img/bkTestimonials1.png), url(../../img/bkTestimonials.png);
+border: none;
+}
+.item-testimonials__button-right{
+background-image: url(../../img/bkTestimonials1.png), url(../../img/bkTestimonials.png);
+border: none;
+}
+
+.testimonials__info{
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .testimonials__nav {
@@ -72,7 +88,7 @@ width: 100%;
 height: 100%;
 }
 
-.item-testimonials:nth-child(4){
+.item-testimonials:nth-child(3){
 width: 70px;
 height: 70px;
 }

@@ -1,9 +1,9 @@
 @import '../shared/index';
  
 .works {
-border: 1px solid blue;
 min-height: 200px;
 text-align: center;
+
 }
 
 .works__header {
@@ -36,47 +36,53 @@ letter-spacing: 0.7px;
  color: gray;
  opacity: 0.7;
  padding-left: 10px;
-   
-  }
+ }
 
 .works__images {
-border: 1px solid yellow;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-align-items: center;
-width: 100%;
+display: inline-grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
 
 }
 
-
- @media screen and (max-width:1200px){
+ @media screen and (max-width:1300px){
     .works__images{
-        flex-direction: column;
+        grid-template-columns: 1fr 1fr 1fr;
+        
     }
  }
  
 .work__column {
-border: 1px solid blue; 
 width: 16.66666%;
-
 }
+
+.work__column img{
+width: 267px;
+height: 200px;
+margin: -5px;
+&:hover{
+  border: 1px solid white;
+  
+}
+}
+
 .work__btn {
-margin: 70px 0px;
-display: inline-flex;
+display: flex;
 justify-content: center;
 border: $borderbtn;
-
-}
+max-width: 140px;
+min-height: 35px;
+margin: 50px auto;
+ }
 
 .work__btn-message {
-padding: 15px 20px;
+padding: 10px 20px;
 color: $textbtn-color;
 border: none;
 background-color: #ffffff;
-    
 font-family: "Hammersmith One";
 font-size: 16px;
 font-weight: 400;
 text-transform: uppercase;
+
 }

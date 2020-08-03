@@ -67,12 +67,17 @@ height: 229px;
 margin-bottom: 20px;
 background: white;
 }
+
+.item-team__foto img{
+width: 100%;
+height: 100%;
+}
 .item-team__name {
-    text-align: center;
-    color: #ffffff;
-font-family: "Roboto - Black";
+text-align: center;
+color: #ffffff;
+font-family: $textRoboto;
 font-size: 14px;
-font-weight: 400;
+font-weight: 800;
 text-transform: uppercase;
 letter-spacing: 0.7px;
 margin-bottom: 10px;
@@ -88,7 +93,7 @@ text-transform: uppercase;
 margin-bottom: 25px;
 }
 .team__end {
-    text-align: center;
+text-align: center;
 }
 .end-text {
 text-align: center;
