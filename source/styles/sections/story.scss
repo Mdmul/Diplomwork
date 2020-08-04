@@ -27,18 +27,13 @@
   width: 235px;
   height: 229px;
   margin-right: 100px;
-  color: #413d4b;
-  font-family: "Playfair Display";
-  font-size: 22px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.1px;
   }
   .story__head {
   }
+  
   .story__title {
 color: #413d4b;
-font-family: "Playfair Display";
+font-family: $textPlayfair;
 font-size: 22px;
 font-weight: 700;
 text-transform: uppercase;
@@ -69,16 +64,16 @@ margin-bottom: 30px;
   }
 
   .story__button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-    margin: 0px auto;
-    border: $borderbtn;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  margin: 0px auto;
+  border: $borderbtn;
   }
   .story__message {
 color: $textbtn-color;
-font-family: "Hammersmith One";
+font-family: $textHammersmith;
 font-size: 16px;
 font-weight: 400;
 text-transform: uppercase;

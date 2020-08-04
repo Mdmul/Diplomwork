@@ -7,8 +7,7 @@ background-size: cover;
 .footer__body {
 }
 .footer__top {
-display: flex;
-justify-content: space-between;
+@extend %space;
 align-items: flex-start;
 }
 .item-footer {
@@ -157,8 +156,7 @@ margin-top: 8px;
 }
    
 .footer__bottom {
-display: flex;
-justify-content: space-between;
+  @extend %space;
 }
 
 .footer__bottom-left {

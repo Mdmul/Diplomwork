@@ -6,3 +6,18 @@ $borderbtn:1px solid #00e0d0;
 
 // fonts
 $textRoboto:"Roboto";
+$textPlayfair:"Playfair Display";
+$textHammersmith:"Hammersmith One";
+ 
+// flex space
+%space{
+display: flex;
+justify-content: space-between;
+}
+
+//font-size
+@mixin fontz($f,$w){
+font-size: $f;
+font-weight: $w;
+}
+

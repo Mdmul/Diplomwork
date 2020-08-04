@@ -6,25 +6,25 @@
 }
 
 .expertise__body {
-  text-align: center;
+text-align: center;
 }
 .expertise__head {
-  display: inline-flex;
-  flex-direction: column;
+display: inline-flex;
+flex-direction: column;
   }
 .expertise__title {
-  color: #413d4b;
-  font-family: "Playfair Display";
-  font-size: 22px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.1px;
-  margin-bottom: 15px;
+color: #413d4b;
+font-family: $textPlayfair;
+font-size: 22px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1.1px;
+margin-bottom: 15px;
 }
 .expertise__text {
 opacity: 0.75;
 color: #2f2d35;
-font-family: "Playfair Display";
+font-family: $textPlayfair;
 font-size: 14px;
 font-weight: 400;
 letter-spacing: 1.05px;
@@ -40,9 +40,9 @@ opacity: 0.3;
 .expertise__row {
 }
 .expertise__column {
-  display: flex; 
-  justify-content: center;
-  flex-wrap: wrap;
+display: flex; 
+justify-content: center;
+flex-wrap: wrap;
   }
 
   @media screen and (max-width:769px){

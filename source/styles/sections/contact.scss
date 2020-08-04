@@ -4,8 +4,7 @@
 }
 
 .contact__body {
-display: flex;
-justify-content: space-between;
+@extend %space;
 }
 
 @media screen and (max-width:769px){
@@ -20,7 +19,7 @@ justify-content: space-between;
 
 .header-left__text {
 color: #413d4b;
-font-family: "Playfair Display";
+font-family: $textPlayfair;
 font-size: 22px;
 font-weight: 700;
 text-transform: uppercase;
@@ -37,8 +36,7 @@ padding-left: 20px;
 opacity: 0.5;
 color: #413d4b;
 font-family: $textRoboto;
-font-size: 14px;
-font-weight: 300;
+@include fontz(14px,300);
 letter-spacing: 0.7px;
 }
 
@@ -51,8 +49,7 @@ padding-left: 20px;
 opacity: 0.5;
 color: #413d4b;
 font-family: $textRoboto;
-font-size: 14px;
-font-weight: 300;
+@include fontz(14px,300);
 letter-spacing: 0.7px;
 }
 .header-left__subject {
@@ -64,10 +61,10 @@ padding-left: 20px;
 opacity: 0.5;
 color: #413d4b;
 font-family: $textRoboto;
-font-size: 14px;
-font-weight: 300;
+@include fontz(14px,300);
 letter-spacing: 0.7px;
 }
+
 .header-left__message {
 display: block;
 min-width: 450px;
@@ -77,11 +74,11 @@ padding: 15px 0px 0px 20px;
 opacity: 0.5;
 color: #413d4b;
 font-family: $textRoboto;
-font-size: 14px;
-font-weight: 300;
+@include fontz(14px,300);
 letter-spacing: 0.7px;
 resize: none;
 }
+
 .contact__button {
 display: inline-block;
 }
@@ -90,7 +87,7 @@ display: inline-block;
 border: $borderbtn;
 background-color: #ffffff;
 color: $textbtn-color;
-font-family: "Hammersmith One";
+font-family: $textHammersmith;
 font-size: 16px;
 font-weight: 400;
 text-transform: uppercase;
@@ -102,7 +99,7 @@ padding: 12px 28px;
 }
 .header-right__text {
 color: #413d4b;
-font-family: "Playfair Display";
+font-family: $textPlayfair;
 font-size: 22px;
 font-weight: 700;
 text-transform: uppercase;
@@ -118,13 +115,11 @@ min-height: 410px;
 
 
 .image__left {
-    display: flex;
+    @extend %space;
     flex-direction: column;
-    justify-content: space-between;
     margin-right: 80px;
 }
 .image__right {
-    display: flex;
+    @extend %space; 
     flex-direction: column;
-    justify-content: space-between;
     }
