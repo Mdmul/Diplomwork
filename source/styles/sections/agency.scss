@@ -1,7 +1,7 @@
 @import '../shared/index.scss';
 
 .agency {
-  background-image: url(../../img/bkAgensy1.png), url(../../img/bkAgency.png);
+  @include bg-with-overlay ("../../img/bkAgency.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -22,12 +22,7 @@
 .logo__icon {
  margin-right: 10px;
 }
-.logo__title {
-}
 
-.agency__menu {
-  
-}
 .agency__list {
 @extend %space;
 align-items: center;
@@ -81,8 +76,7 @@ align-items: center;
   margin: 0px auto 50px;
   color: #ffffff;
   font-family: $textRoboto;
-  font-size: 14px;
-  font-weight: 300;
+  @include fontz(14px,300);
   line-height: 24px;
   letter-spacing: 0.7px;
   text-align: center;
@@ -99,7 +93,7 @@ align-items: center;
   padding: 13px;
   margin: 0px auto 125px;
   border: $borderbtn;
-  background-image: url(../../img/backgroundAgency.png);
+  background-color: inherit;
   background-size: cover;
   }
 
@@ -109,9 +103,9 @@ align-items: center;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;
-  
   border: none;
 }
+
 .agency__options {
   display: flex;
   justify-content: center;
@@ -127,7 +121,7 @@ align-items: center;
   margin-right: 5px;
   }
   
-.agency__item:first-child{
+.agency__item--selected{
   background-color: #00e0d0;
   border: none;
 }

@@ -18,15 +18,14 @@
 .works__text {
   color: #413d4b;
   font-family: $textRoboto;
-  font-size: 14px;
-  font-weight: 300;
+  @include fontz(14px,300);
   letter-spacing: 0.7px;
   display: inline-flex;
   align-items: center;
 }
 
-.works__text .fa-chevron-right {
-  font-size: 25px;
+.works__text-icon{
+  font-size: 13px;
   color: gray;
   opacity: 0.7;
   padding-left: 10px;
@@ -73,7 +72,6 @@
   border: $borderbtn;
   color: $textbtn-color;
   background-color: #ffffff;
-  font-family: $textHammersmith;
   font-size: 16px;
   font-weight: 400;
   text-transform: uppercase;

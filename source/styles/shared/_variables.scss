@@ -15,9 +15,20 @@ display: flex;
 justify-content: space-between;
 }
 
+// input size
+%inpsize{
+min-width: 450px;
+min-height: 45px;
+}
+
+
 //font-size
 @mixin fontz($f,$w){
 font-size: $f;
 font-weight: $w;
 }
 
+//background fon
+@mixin  bg-with-overlay($image-path) {
+background-image:linear-gradient(to right, hsla(246, 81%, 10%, 0.85) 0%, hsla(258, 53%, 24%, 0.85)), url(#{$image-path});    
+}

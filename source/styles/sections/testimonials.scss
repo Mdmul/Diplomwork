@@ -1,12 +1,8 @@
 
 .testimonials {
-background-image: url(../../img/bkTestimonials1.png), url(../../img/bkTestimonials.png);
+@include bg-with-overlay ("../../img/bkTestimionials.png");
 background-repeat: no-repeat;
 background-size: cover;
-opacity: 0.85;
-}
-
-.testimonials__body {
 }
 
 .testimonials__header {
@@ -52,11 +48,11 @@ margin-bottom: 30px;
 
 .item-testimonials__button-left{
 margin-right: 15px;
-background-image: url(../../img/bkTestimonials1.png), url(../../img/bkTestimonials.png);
+background-color: inherit;
 border: none;
 }
 .item-testimonials__button-right{
-background-image: url(../../img/bkTestimonials1.png), url(../../img/bkTestimonials.png);
+background-color: inherit;
 border: none;
 }
 

@@ -17,10 +17,9 @@
     <section class="agency">
         <div class="container">
             <div class="agency__body">
-                <div class="agency__header">
+                <header class="agency__header">
                     <a class="logo" href="#">
-                        <div class="logo__icon"><img src="../img/VectorObject.png" alt="картинка"></div>
-                        <div class="logo__title"><img src="../img/tajam.png" alt="картинка"></div>
+                        <div class="logo__icon"><img src="../img/Logo.png" alt="картинка"></div>
                     </a>
                     <nav class="agency__menu">
                         <ul class="agency__list">
@@ -33,20 +32,20 @@
                             <li><a href="#" class="menu__link">CONTACT</a></li>
                         </ul>
                     </nav>
-                </div>
-                <div class="agency__main">
+                </header>
+                <main class="agency__main">
                     <h1 class="main__title">We Are Awesome Creative Agency</h1>
                     <div class="agency__line"></div>
                     <p class="main__text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit
                         auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec
                         sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi
                         accumsan ipsum velit.</p>
-                </div>
+                </main>
                 <button class="agency__button">
                     <span class="agency__message">LEARN MORE</span>
                 </button>
                 <div class="agency__options">
-                    <div class="agency__item"></div>
+                    <div class="agency__item agency__item--selected"></div>
                     <div class="agency__item"></div>
                     <div class="agency__item"></div>
                     <div class="agency__item"></div>
@@ -69,9 +68,9 @@
                     <p class="story__text2">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare
                         odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad
                         litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                    <div class="story__button">
-                        <button class="story__message">LEARN MORE</button>
-                    </div>
+                    <button class="story__button">
+                        <span class="story__message">LEARN MORE</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -81,7 +80,7 @@
         <div class="container">
             <div class="video__body">
                 <div class="video__outline">
-                    <div class="video__image"><img src="../img/play.png" alt="картинка"></div>
+                    <div class="video__image"><i class="fa fa-play play__icon" aria-hidden="true"></i></div>
                 </div>
                 <div class="video__text">WATCH OUR STORY</div>
             </div>
@@ -181,9 +180,9 @@
                 </div>
                 <div class="team__end">
                     <div class="end-text">Become part of our dream team, let’s join us ! </div>
-                    <div class="end-btn">
-                        <button class="end-btn__message">WE ARE HIRING</button>
-                    </div>
+                    <button class="end-btn">
+                        <span class="end-btn__message">WE ARE HIRING</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -193,12 +192,12 @@
         <div class="container">
             <div class="works__header">
                 <h2 class="works__title">OUR WORKS</h2>
-                <a class="works__text" href="#">See All Project in dribbble <i class="fa fa-chevron-right"
-                        aria-hidden="true"></i></a>
+                <a class="works__text" href="#">See All Project in dribbble <i
+                        class="fa fa-chevron-right works__text-icon" aria-hidden="true"></i></a>
             </div>
         </div>
         <div class="works__images">
-            <a class="work__column"  href="#"><img src="../img/work1.jpg" alt="картинка"></a>
+            <a class="work__column" href="#"><img src="../img/work1.jpg" alt="картинка"></a>
             <a class="work__column" href="#"><img src="../img/work2.jpg" alt="картинка"></a>
             <a class="work__column" href="#"><img src="../img/work3.jpg" alt="картинка"></a>
             <a class="work__column" href="#"><img src="../img/work4.jpg" alt="картинка"></a>
@@ -267,9 +266,9 @@
                     <input class="header-left__email" type="text" name="e-mail" placeholder="Email">
                     <input class="header-left__subject" type="text" name="subject" placeholder="Subject">
                     <textarea class="header-left__message" placeholder="Your Massage"></textarea>
-                    <div class="contact__button">
-                        <button class="contact__button-message">SUBMIT</button>
-                    </div>
+                    <button class="contact__button">
+                        <span class="contact__button-message">SUBMIT</span>
+                    </button>
                 </div>
                 <div class="contact__header-right">
                     <h2 class="header-right__text">OUR HAPPY CLIENT</h2>
@@ -320,8 +319,7 @@
                 <div class="footer__top">
                     <div class="item-footer">
                         <a class="logo logo-footer" href="#">
-                            <div class="logo__icon"><img src="../img/VectorObject.png" alt="картинка"></div>
-                            <div class="logo__title"><img src="../img/tajam.png" alt="картинка"></div>
+                            <div class="logo__icon"><img src="../img/Logo.png" alt="картинка"></div>
                         </a>
                         <div class="footer__text">lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis
                             sem nibh elit. Duis sed odio sit amet auctror a ornare odio non mauris vitae erat in elit
@@ -340,11 +338,12 @@
                     <div class="item-footer">
                         <div class="item-footer__text">STAY IN TOUCH</div>
                         <div class="item-footer__newsletter">
-                            <div class="item-footer__newsletter-form">Subscribe our newsletter</div>
-                            <div class="item-footer__newsletter-btn">
-                                <button class="button-message"><i class="fa fa-paper-plane"
-                                        aria-hidden="true"></i></button>
-                            </div>
+                            <input class="item-footer__newsletter-form" type="text"
+                                placeholder="Subscribe our newsletter" name="Сообщение"></input>
+                            <button class="item-footer__newsletter-btn">
+                                <span class="button-message"><i class="fa fa-paper-plane"
+                                        aria-hidden="true"></i></span>
+                            </button>
                         </div>
                         <div class="item-footer__social">
                             <a class="item-footer__social-media" href="#"><i class="fa fa-facebook"

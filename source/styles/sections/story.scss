@@ -2,7 +2,7 @@
 
 /* история */
 .story {
-    background-color: #ffffff;
+  background-color: #ffffff;
   }
   
   .story__body {
@@ -10,7 +10,7 @@
   margin-left: 64px;
    }
 
-   @media screen and (max-width:1229px){
+   @media screen and (max-width:1024px){
     .story__body{
       flex-direction: column;
     } 
@@ -28,9 +28,7 @@
   height: 229px;
   margin-right: 100px;
   }
-  .story__head {
-  }
-  
+    
   .story__title {
 color: #413d4b;
 font-family: $textPlayfair;
@@ -63,17 +61,18 @@ letter-spacing: 0.42px;
 margin-bottom: 30px;
   }
 
-  .story__button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  margin: 0px auto;
-  border: $borderbtn;
-  }
+.story__button {
+display: inline-flex;
+justify-content: center;
+align-items: center;
+padding: 12px;
+margin: 0px auto;
+border: $borderbtn;
+background-color: inherit;
+}
+
   .story__message {
 color: $textbtn-color;
-font-family: $textHammersmith;
 font-size: 16px;
 font-weight: 400;
 text-transform: uppercase;

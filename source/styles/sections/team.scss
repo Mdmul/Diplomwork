@@ -1,17 +1,11 @@
 @import '../shared/index';
 
 .team {
-background-image: url(../../img/backgroundTeam.png);
+@include bg-with-overlay ("../../img/bkTeam.png");
 background-repeat: no-repeat;
 background-size: cover;
-opacity: 0.85;
 }
 
-.team__body {
-}
-.team__header {
-    
-}
 .team__title {
 text-align: center;
 color: #ffffff;
@@ -112,15 +106,15 @@ margin-bottom: 30px;
 display:inline-flex;
 border: $borderbtn;
 margin-bottom: 20px;
+background-color:inherit;
 }
 
 .end-btn__message {
 padding: 15px;
 color: $textbtn-color;
-font-family: $textHammersmith;
 font-size: 16px;
 font-weight: 400;
 text-transform: uppercase;
-background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+background-color: inherit;
 border: none;
 }
