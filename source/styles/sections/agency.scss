@@ -28,6 +28,29 @@
 align-items: center;
 }
 
+.menu__bar{
+  color: $textbtn-color;
+  display: none;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.menu__bar-icon{
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 769px) {  
+  .agency__list li{   
+      display: none;  
+     
+  }
+  .menu__bar{
+    display: block;
+    margin-right: 100px;
+    }
+  
+}  
+
 .menu__link {
   margin-right: 20px;
   color: #ffffff;
