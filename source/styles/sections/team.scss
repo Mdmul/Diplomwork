@@ -1,120 +1,126 @@
-@import '../shared/index';
+@import "../shared/index";
 
 .team {
-@include bg-with-overlay ("../../img/bkTeam.png");
-background-repeat: no-repeat;
-background-size: cover;
+  @include bg-with-overlay("../../img/bkTeam.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .team__title {
-text-align: center;
-color: #ffffff;
-font-family: $textPlayfair;
-font-size: 22px;
-font-weight: 700;
-text-transform: uppercase;
-letter-spacing: 1.1px;
+  text-align: center;
+  color: #ffffff;
+  font-family: $textPlayfair;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
 }
 
 .team__text {
-margin-top: 20px;
-text-align: center;
-color: #f9f9f9;
-font-family: $textPlayfair;
-font-size: 14px;
-font-weight: 400;
-letter-spacing: 1.05px;
+  margin-top: 20px;
+  text-align: center;
+  color: #f9f9f9;
+  font-family: $textPlayfair;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.05px;
 }
 .team__line {
-margin: 20px auto 45px;
-width: 50px;
-height: 2px;
-background-color: #ffffff;
-opacity: 0.2;
+  margin: 20px auto 45px;
+  width: 50px;
+  height: 2px;
+  background-color: #ffffff;
+  opacity: 0.2;
 }
 .team__row {
 }
 .team__column {
- @extend %space;
+  @extend %space;
 }
 
-@media screen and (max-width:769px){
-    .team__column{
-        flex-wrap: wrap;
-        margin-left: 50px;
-    }
- }
- @media screen and (max-width:420px){
-    .team__column{
-        flex-direction: column;
-    }
- }
+@media screen and (max-width: 769px) {
+  .team__column {
+    flex-wrap: wrap;
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .team__column {
+    flex-direction: column;
+  }
+}
 
 .item-team {
-margin-bottom: 70px;
-border: 1px solid #ffffff;
-   
+  margin-bottom: 70px;
+  border: 1px solid #ffffff;
+  flex: 1;
+  margin-right: 1rem;
+  &:last-child {
+      margin-right: 0;
+  }
 }
 .item-team__foto {
-width: 220px;
-height: 229px;
-margin-bottom: 20px;
-background: white;
+  height: 229px;
+  margin-bottom: 20px;
+  background: white;
 }
 
-.item-team__foto img{
-width: 100%;
-height: 100%;
+.item-team__foto img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
+
 .item-team__name {
-text-align: center;
-color: #ffffff;
-font-family: $textRoboto;
-font-size: 14px;
-font-weight: 800;
-text-transform: uppercase;
-letter-spacing: 0.7px;
-margin-bottom: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-family: $textRoboto;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-bottom: 10px;
 }
 
 .item-team__position {
-text-align: center;
-opacity: 0.7;
-color: #fafafa;
-font-family: $textRoboto;
-font-size: 13px;
-font-weight: 300;
-text-transform: uppercase;
-margin-bottom: 25px;
+  text-align: center;
+  opacity: 0.7;
+  color: #fafafa;
+  font-family: $textRoboto;
+  font-size: 13px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 25px;
 }
 
 .team__end {
-text-align: center;
+  text-align: center;
 }
 
 .end-text {
-text-align: center;
-color: #f3f3f3;
-font-family: $textRoboto;
-font-size: 14px;
-font-weight: 300;
-letter-spacing: 0.7px;
-margin-bottom: 30px;
+  text-align: center;
+  color: #f3f3f3;
+  font-family: $textRoboto;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.7px;
+  margin-bottom: 30px;
 }
 
 .end-btn {
-display:inline-flex;
-border: $borderbtn;
-margin-bottom: 20px;
-background-color:inherit;
+  display: inline-flex;
+  border: $borderbtn;
+  margin-bottom: 20px;
+  background-color: inherit;
 }
 
 .end-btn__message {
-padding: 15px;
-color: $textbtn-color;
-font-size: 16px;
-font-weight: 400;
-text-transform: uppercase;
-background-color: inherit;
-border: none;
+  padding: 15px;
+  color: $textbtn-color;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: inherit;
+  border: none;
 }
