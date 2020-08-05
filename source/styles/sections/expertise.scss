@@ -1,59 +1,104 @@
 
 /* expertise */
 
-.expertise {
-
-}
 
 .expertise__body {
+text-align: center;
 }
 .expertise__head {
-  margin: 0 auto;
-  border: 1px solid red;
-
-}
+display: inline-flex;
+flex-direction: column;
+  }
 .expertise__title {
-  border: 1px solid red;
-  margin: 0 auto;
-  text-align: center;
+color: #413d4b;
+font-family: $textPlayfair;
+font-size: 22px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1.1px;
+margin-bottom: 15px;
 }
 .expertise__text {
-   text-align: center;
+opacity: 0.75;
+color: #2f2d35;
+font-family: $textPlayfair;
+font-size: 14px;
+font-weight: 400;
+letter-spacing: 1.05px;
+margin-bottom: 15px;
 }
 .expertise__line {
- margin: 0 auto;
-  text-align: center;
-  width: 53px;
-height: 5px;
+margin: 0px auto 40px;
+width: 50px;
+height: 2px;
 background-color: #413d4b;
 opacity: 0.3;
 }
 .expertise__row {
 }
 .expertise__column {
-  display: flex;
-  width: 894px;
-  height: 435px;
-  justify-content: center;
-  flex-wrap: wrap;
+display: flex; 
+justify-content: center;
+flex-wrap: wrap;
+  }
+
+  @media screen and (max-width:769px){
+    .expertise__column{
+        flex-wrap: wrap;
+    }
+ }
+ @media screen and (max-width:420px){
+    .expertise__column{
+      flex-direction: column;
+    }
+ }
+
+.item-expertise {
+  width: 33.3333%;
+  text-align: center;
+  border-right: 1px solid gray;
+  border-top: 1px solid gray;
+  padding: 0 20px;
   
 }
-.item-expertise {
-  border: 1px solid red;
-  width: 254px;
-  height: 178px;
-  text-align: center;
-}
-.item-expertise__icon {
-  width: 50px;
+.item-expertise:nth-child(3) {
+  border-right: none;
+} 
+.item-expertise:nth-child(6) {
+  border-right: none;
+} 
+.item-expertise:nth-child(1) {
+  border-top: none;
+} 
+.item-expertise:nth-child(2) {
+  border-top: none;
+} 
+.item-expertise:nth-child(3) {
+  border-top: none;
+} 
+
+.item-expertise__icon {  
+  margin: 35px auto 30px;
   height: 50px;
-  margin: 0 auto;
-}
+  }
 
 .item-expertise__title {
-  display: inline-block;
-  border: 1px solid green;
- 
+display: inline-block;
+margin-bottom: 25px;
+color: #413d4b;
+font-family: $textRoboto;
+font-size: 14px;
+font-weight: 800;
+text-transform: uppercase;
+letter-spacing: 0.7px;
 }
 .item-expertise__text {
+margin-bottom: 39px;
+opacity: 0.75;
+color: #333333;
+font-family: $textRoboto;
+font-size: 14px;
+font-weight: 300;
+line-height: 22px;
+letter-spacing: 0.7px;
 }

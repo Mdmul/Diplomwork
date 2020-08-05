@@ -1,0 +1,119 @@
+@import '../shared/index';
+
+.contact {
+}
+
+.contact__body {
+@extend %space;
+}
+
+@media screen and (max-width:769px){
+    .contact__body{
+        flex-wrap: wrap;
+    }
+ }
+ 
+
+.header-left__text {
+color: #413d4b;
+font-family: $textPlayfair;
+font-size: 22px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1.1px;
+}
+
+.header-left__name {
+display: block;
+@extend %inpsize;
+margin-top: 30px;
+text-align: left;
+padding: 0px 20px; 
+opacity: 0.5;
+color: #413d4b;
+font-family: $textRoboto;
+@include fontz(14px,300);
+letter-spacing: 0.7px;
+}
+
+.header-left__email {
+display: block;
+@extend %inpsize;
+margin: 20px 0px;
+padding: 0px 20px;  
+opacity: 0.5;
+color: #413d4b;
+font-family: $textRoboto;
+@include fontz(14px,300);
+letter-spacing: 0.7px;
+}
+.header-left__subject {
+display: block;
+@extend %inpsize;
+margin-bottom: 20px;
+padding: 0px 20px;  
+opacity: 0.5;
+color: #413d4b;
+font-family: $textRoboto;
+@include fontz(14px,300);
+letter-spacing: 0.7px;
+}
+
+.header-left__message {
+display: block;
+min-width: 450px;
+min-height: 200px;
+margin-bottom: 20px;
+padding: 15px 20px 0px 20px; 
+opacity: 0.5;
+color: #413d4b;
+font-family: $textRoboto;
+@include fontz(14px,300);
+letter-spacing: 0.7px;
+resize: none;
+}
+
+.contact__button {
+display: inline-block;
+padding: 12px 28px;
+background-color: inherit;
+border: $borderbtn;
+}
+
+.contact__button-message {
+background-color: #ffffff;
+color: $textbtn-color;
+font-size: 16px;
+font-weight: 400;
+text-transform: uppercase;
+border: none;
+}
+
+.contact__header-right {
+}
+.header-right__text {
+color: #413d4b;
+font-family: $textPlayfair;
+font-size: 22px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1.1px;
+display: inline-block;
+margin-bottom: 40px;
+}
+.image {
+display: flex;
+justify-content: space-around;
+min-height: 410px;
+}
+
+
+.image__left {
+    @extend %space;
+    flex-direction: column;
+    margin-right: 80px;
+}
+.image__right {
+    @extend %space; 
+    flex-direction: column;
+    }

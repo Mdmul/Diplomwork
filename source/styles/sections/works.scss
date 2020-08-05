@@ -1,0 +1,78 @@
+@import "../shared/index";
+
+.works__header {
+  background-color: #ffffff;
+  @extend %space;
+  align-items: center;
+}
+
+.works__title {
+  color: #413d4b;
+  font-family: $textPlayfair;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+
+.works__text {
+  color: #413d4b;
+  font-family: $textRoboto;
+  @include fontz(14px,300);
+  letter-spacing: 0.7px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.works__text-icon{
+  font-size: 13px;
+  color: gray;
+  opacity: 0.7;
+  padding-left: 10px;
+}
+
+.works__images {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 1fr;
+  @media screen and (max-width: 1300px) {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+}
+
+.work__column {
+  display: block;
+  overflow: hidden;
+  &:hover {
+    img {
+      transform: rotate(-10deg) scale(2);
+      filter: grayscale(0.7);
+    }
+  }
+}
+
+.work__column img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  transition: 0.6s;
+}
+
+.work__btn {
+  display: flex;
+  justify-content: center;
+  max-width: 140px;
+  min-height: 35px;
+  margin: 50px auto;
+}
+
+.work__btn-message {
+  padding: 10px 20px;
+  border: $borderbtn;
+  color: $textbtn-color;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}

@@ -1,41 +1,82 @@
-
+@import '../shared/index';
 
 /* история */
 .story {
-    background-color: #ffffff;
+  background-color: #ffffff;
   }
   
   .story__body {
   display: flex;
   margin-left: 64px;
- 
+   }
+
+   @media screen and (max-width:1024px){
+    .story__body{
+      flex-direction: column;
+    } 
+    .story__head{
+      order: 2;
+    }
+    .story__image{
+      order: 1;
+      margin-bottom: 20px;
+    }
   }
+
   .story__image {
-    width: 235px;
+  width: 235px;
   height: 229px;
   margin-right: 100px;
-  color: #413d4b;
-  font-family: "Playfair Display";
-  font-size: 22px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1.1px;
   }
-  .story__head {
-  }
+    
   .story__title {
-    color: #413d4b;
-font-family: "Playfair Display";
+color: #413d4b;
+font-family: $textPlayfair;
 font-size: 22px;
 font-weight: 700;
 text-transform: uppercase;
+color: #413d4b;
+letter-spacing: 1.1px;
+margin-bottom: 30px;
   }
+
   .story__text1 {
+opacity: 0.75;
+color: #413d4b;
+font-family: $textRoboto;
+font-size: 14px;
+font-weight: 300;
+line-height: 22px;
+letter-spacing: 0.42px;
+margin-bottom: 30px;
   }
   .story__text2 {
+opacity: 0.75;
+color: #413d4b;
+font-family: $textRoboto;
+font-size: 14px;
+font-weight: 300;
+line-height: 22px;
+letter-spacing: 0.42px;
+margin-bottom: 30px;
   }
-  .story__button {
-  }
+
+.story__button {
+display: inline-flex;
+justify-content: center;
+align-items: center;
+padding: 12px;
+margin: 0px auto;
+border: $borderbtn;
+background-color: inherit;
+}
+
   .story__message {
+color: $textbtn-color;
+font-size: 16px;
+font-weight: 400;
+text-transform: uppercase;
+border: none;
+background-color: #ffffff;
   }
   
