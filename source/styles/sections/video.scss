@@ -6,9 +6,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   }
+
+  .video__body {
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   
   .video__outline {
-  margin: 202px auto 0px;
   width: 103px;
   height: 103px;
   border: 3px solid #ffffff;
@@ -16,6 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: transparent;
   }
  
   .play__icon{
@@ -31,5 +39,5 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.8px;
-  margin: 25px auto 203px;
+  margin-top: 25px;
   }
