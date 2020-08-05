@@ -112,7 +112,7 @@ margin-right: 10px;
 min-width: 211px;
 min-height: 45px;
 border: 1px solid #f0f0f0;
-@include bg-with-overlay ("../../img/bkFooter1.png");
+background-color: inherit;
 }
 
 .item-footer__newsletter-btn {
